@@ -20,11 +20,11 @@ class Game extends Component {
 	render() {
 		const { slideLeft, slideRight, slideUp, slideDown, grids } = this.props;
 		
-		let rows = sliceGrid(grids);
+		let rows = this.sliceGrid(grids);
 
 		return (
 			<div id="game">
-				{rows.map((row) => <div class="row">{row.map((grid) => <Grid number={grid} />)}</div>)}
+				{rows.map((row) => <div className="row">{row.map((grid) => <Grid number={grid} />)}</div>)}
 			</div>
 		)
 	}
@@ -35,7 +35,7 @@ Game.PropTypes = {
 	slideDown: PropTypes.func.isRequired,
 	slideUp: PropTypes.func.isRequired,
 	slideRight: PropTypes.func.isRequired,
-	grids: PropTypes.Array.isRequired
+	grids: PropTypes.array.isRequired
 }
 
 export default Game

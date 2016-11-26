@@ -8,7 +8,7 @@ module.exports = {
 		app: ['./index.js']
 	},
 
-	ouput: {
+	output: {
 		path: __dirname + '/dist',
 		filename: "[name].js"
 	},

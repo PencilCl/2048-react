@@ -7,10 +7,10 @@ import * as Actions from '../actions'
 class App extends Component {
 	render() {
 		return (
-			<div style="text-align: center;">
+			<div style={{textAlign: 'center'}}>
 				<h2>2048</h2>
 				<NewGame />
-				<Game />
+				<Game grids={this.props.game}/>
 			</div>
 		)
 	}
@@ -18,8 +18,7 @@ class App extends Component {
 
 function mapStateToProps(state) {
 	return {
-		game: state.game,
-		newGame: state.newGame
+		game: state.game
 	}
 }
 

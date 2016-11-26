@@ -1,4 +1,4 @@
-import { SLIDE_LEFT, SLIDE_RIGHT, SLIDE_UP, SLIDE_DOWN, NEW_GAME } = from '../actions/actionTypes'
+import { SLIDE_LEFT, SLIDE_RIGHT, SLIDE_UP, SLIDE_DOWN, NEW_GAME } from '../actions/actionTypes'
 
 function slideLeft(state) {
 	return state;
