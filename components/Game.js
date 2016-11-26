@@ -57,8 +57,8 @@ class Game extends Component {
 			<div>
 				<Score score={score} />
 				<ReactGestures
-					onSwipeUp={slideDown}
-					onSwipeDown={slideUp}
+					onSwipeUp={slideUp}
+					onSwipeDown={slideDown}
 					onSwipeLeft={slideLeft}
 					onSwipeRight={slideRight}>
 					<div id="game">
