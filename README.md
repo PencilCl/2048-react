@@ -2,6 +2,8 @@
 2048 by react
 ##界面
 ![Game](https://github.com/PencilCl/readme-images/blob/master/2048-react/game.png)
+##Demo
+演示地址:[Demo](https://pencilcl.github.io/2048-react/)
 ##安装相关依赖
 ```
 npm install
