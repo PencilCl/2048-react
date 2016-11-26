@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react'
+import './style/NewGame.scss'
 
 class NewGame extends Component {
 	render() {

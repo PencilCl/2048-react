@@ -8,7 +8,7 @@ class App extends Component {
 	render() {
 		return (
 			<div style={{textAlign: 'center'}}>
-				<h2>2048</h2>
+				<h1 style={{color: '#867E77'}}>2048</h1>
 				<NewGame />
 				<Game grids={this.props.game}/>
 			</div>

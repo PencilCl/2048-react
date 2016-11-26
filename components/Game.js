@@ -1,5 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import Grid from './Grid'
+import Score from './Score'
+import './style/Game.scss'
 
 class Game extends Component {
 
@@ -23,8 +25,11 @@ class Game extends Component {
 		let rows = this.sliceGrid(grids);
 
 		return (
-			<div id="game">
-				{rows.map((row) => <div className="row">{row.map((grid) => <Grid number={grid} />)}</div>)}
+			<div>
+				<Score score="2048" />
+				<div id="game">
+					{rows.map((row) => <div className="row">{row.map((grid) => <Grid number={grid} />)}</div>)}
+				</div>
 			</div>
 		)
 	}
