@@ -6,7 +6,7 @@ class Grid extends Component {
 		const { number } = this.props;
 
 		return (
-			<span id="grid">{ number }</span>
+			<span id="grid" className={"number_" + number}>{ number }</span>
 		)
 
 	}

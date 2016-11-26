@@ -1,6 +1,7 @@
 import { SLIDE_LEFT, SLIDE_RIGHT, SLIDE_UP, SLIDE_DOWN, NEW_GAME } from '../actions/actionTypes'
 
 function slideLeft(state) {
+
 	return state;
 }
 
@@ -29,7 +30,10 @@ function repeat(n, val) {
 }
 
 function initialState() {
-	return shuffle(repeat(2, 2).concat(repeat(14, 0)));
+	return {
+		'grids': shuffle(repeat(2, 2).concat(repeat(14, 0))),
+		'score': 0
+	}
 }
 
 export default function game (state = initialState(), action) {
