@@ -1,0 +1,16 @@
+#game {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	border: 1px solid #804311;
+	margin: 50px auto;
+
+	height: 500px;
+	width: 500px;
+}
+
+.row {
+	flex-basis: 100%;
+	display: flex;
+	justify-content: space-between;
+}
