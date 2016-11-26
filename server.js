@@ -3,7 +3,7 @@ var webpackDevMiddleware = require('webpack-dev-middleware');
 var webpackDevServer = require('webpack-dev-server');
 var config = require('./webpack.config.js');
 
-config.entry.app.unshift("webpack-dev-server/client?http://192.168.66.66:8000");
+config.entry.app.unshift("webpack-dev-server/client?http://192.168.199.66:8000");
 config.entry.app.unshift("webpack/hot/only-dev-server");
 
 var compiler = webpack(config);
