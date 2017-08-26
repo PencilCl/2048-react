@@ -1,12 +1,18 @@
 import React, { Component, PropTypes } from 'react'
-import './style/Score.scss';
+
+const styles = {
+	score: {
+		color: "red",
+		fontWeight: "bold"
+	}
+}
 
 class Score extends Component {
 	render() {
 		const { score } = this.props;
 
 		return (
-			<h3>Score: <span id="score">{ score }</span></h3>	
+			<h3>Score: <span style={styles.score}>{ score }</span></h3>	
 		)
 	}
 }

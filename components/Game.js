@@ -2,7 +2,27 @@ import React, { Component, PropTypes } from 'react'
 import ReactGestures from 'react-gestures'
 import Grid from './Grid'
 import Score from './Score'
-import './style/Game.scss'
+
+const styles = {
+	game: {
+		display: "flex",
+		flexWrap: "wrap",
+		alignContent: "space-between",
+		border: "3px solid #A49991",
+		margin: "20px auto",
+		backgroundColor: "#baada2",
+		borderRadius: "5px",
+		
+		padding: "20px",
+		height: "460px",
+		width: "460px"
+	},
+	row: {
+		flexBasis: "100%",
+		display: "flex",
+		justifyContent: "space-between"
+	}
+}
 
 class Game extends Component {
 
@@ -61,8 +81,8 @@ class Game extends Component {
 					onSwipeDown={slideDown}
 					onSwipeLeft={slideLeft}
 					onSwipeRight={slideRight}>
-					<div id="game">
-						{rows.map((row, key) => <div key={key} className="row">{row.map((grid, id) => <Grid key={id} number={grid} />)}</div>)}
+					<div style={styles.game}>
+						{rows.map((row, key) => <div key={key} style={styles.row}>{row.map((grid, id) => <Grid key={id} number={grid} />)}</div>)}
 					</div>
 				</ReactGestures>
 			</div>

@@ -1,12 +1,25 @@
 import React, { Component, PropTypes } from 'react'
-import './style/NewGame.scss'
+
+const styles = {
+	newGame: {
+		backgroundColor: "#baada2",
+		outline: "none",
+		border: "1px solid #A49991",
+		borderRadius: "3px",
+	
+		color: "white",
+		fontWeight: "bold",
+		fontSize: "16px",
+		padding: "10px 20px"
+	}
+}
 
 class NewGame extends Component {
 	render() {
 		const { newGame } = this.props;
 
 		return (
-			<button id="new-game" onClick={newGame}>new game</button>
+			<button style={styles.newGame} onClick={newGame}>new game</button>
 		)
 	}
 }

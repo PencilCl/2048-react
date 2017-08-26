@@ -3,7 +3,9 @@ var webpackDevMiddleware = require('webpack-dev-middleware');
 var webpackDevServer = require('webpack-dev-server');
 var config = require('./webpack.config.js');
 
-config.entry.app.unshift("webpack-dev-server/client?http://192.168.199.66:8000");
+var port = process.port ? process.port : 8000
+
+config.entry.app.unshift("webpack-dev-server/client?http://localhost:" + port);
 config.entry.app.unshift("webpack/hot/only-dev-server");
 
 var compiler = webpack(config);
@@ -22,4 +24,4 @@ var server = new webpackDevServer(compiler, {
 	}
 });
 
-server.listen(8000);
+server.listen(port);

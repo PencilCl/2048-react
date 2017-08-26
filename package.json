@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "webpack": "webpack -p"
   },
   "repository": {
     "type": "git",
@@ -18,22 +18,15 @@
   },
   "homepage": "https://github.com/PencilCl/2048-react#readme",
   "devDependencies": {
-    "autoprefixer": "^6.5.3",
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.8",
     "babel-plugin-react-transform": "^2.0.2",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
-    "css-loader": "^0.23.1",
-    "express": "^4.14.0",
+    "babel-preset-stage-1": "^6.24.1",
     "html-webpack-plugin": "^2.24.1",
-    "node-sass": "^3.12.2",
-    "postcss-loader": "^0.9.1",
-    "precss": "^1.4.0",
     "react-gestures": "git+https://github.com/PencilCl/react-gestures.git",
     "react-hot-loader": "^1.3.0",
-    "sass-loader": "^4.0.0",
-    "style-loader": "^0.13.1",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.14.1",
     "webpack-hot-middleware": "^2.13.2"
