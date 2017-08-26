@@ -1,6 +1,9 @@
 var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
+	devtool: 'eval-source-map', //配置生成Source map
+
 	entry: {
 		app: ['./index.js']
 	},
@@ -24,11 +27,10 @@ module.exports = {
 	},
 
 	plugins: [
-        new webpack.DefinePlugin({
-            'process.env': {
-              NODE_ENV: JSON.stringify('production')
-            }
-          }),
-        new webpack.optimize.UglifyJsPlugin()
+		new HtmlWebpackPlugin({
+			template: __dirname + '/index.html'
+		}),
+		new webpack.HotModuleReplacementPlugin()
 	]
+
 }

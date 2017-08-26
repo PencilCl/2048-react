@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 var webpackDevMiddleware = require('webpack-dev-middleware');
 var webpackDevServer = require('webpack-dev-server');
-var config = require('./webpack.config.js');
+var config = require('./webpack.dev.config.js');
 
 var port = process.port ? process.port : 8000
 
